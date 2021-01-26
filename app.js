@@ -5,12 +5,21 @@ $(window).on("load",function(){
    $('.content').show();
     });
 
-var home = $('.name');
+var title = $('.name');
+var btn = $('.about');
+var hr = $('hr').hide();
 
-home.click(() => {
-    home.animate(() => {
-        bottom: '500px'
-    });
+btn.click(() => {
+    title.animate({
+        top: 50
+    }, 1200);
+
+    btn.text('');
+    btn.addClass('fas fa-times close1');
+
+    setTimeout(() => {
+        hr.fadeIn(1000);
+    }, 1200);
 });
 
 var tab = $('.tab').hide();
