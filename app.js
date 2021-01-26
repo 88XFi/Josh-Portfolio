@@ -20,4 +20,5 @@ var menu = $('.menu');
 
 menu.click(() => {
     tab.slideToggle(1500);
+    menu.toggleClass('active');
 });

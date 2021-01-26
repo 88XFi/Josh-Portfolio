@@ -121,14 +121,21 @@ ul .fas {
     color: #54e346;
 }
 
-.line {
-    position: absolute;
-    padding: 2px;
-    color: #54e346;
-}
-
 @media(max-width: 1210px) {
-    li {
-        margin: 30px;
+    li, a {
+        margin: 0 20px;
+        display: inline;
+        font-size: 16px;
+    }
+    .name {
+        top: 63vh;
+    }
+    .tab {
+        height: 13vh;
+        width: 100%;
+    }
+    .menu {
+        top: 38px;
+        font-size: 20px;
     }
 }
