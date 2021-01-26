@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    src: url(../sans.ttf);
+    font-family: 'Product';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+body {
+    background: #1b262c;
+    color: #fff;
+    font-family: 'Product';
+}
+
+nav {
+    background: #1b262c;
+    text-align: center;
+    padding: 25px 0;
+    box-shadow: 0 2px 50px #000;
+}
+
+.line {
+    background-size: 200% 200%;
+    padding: 2px;
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+	25%{
+		background-position: left bottom;
+	}
+	50%{
+		background-position: right bottom;
+	}
+	75%{
+		background-position: right top;
+	}
+	100%{
+		background-position: left top;
+    }
+}
+
+a {
+    color: white;
+}
+
+ul {
+    cursor: default;
+}
+
+li {
+    display: inline;
+    margin: 0 50px;
+    cursor: pointer;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.fas {
+    color: #79d70f;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: 80vh;
+    cursor: default;
+}
