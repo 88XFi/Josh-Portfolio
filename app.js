@@ -17,7 +17,7 @@ btn.click(() => {
         top: 50
     }, 1200);
 
-    btn.fadeOut(1000);
+    btn.animate({opacity: 0}, 1000);
 
     setTimeout(() => {
         line.fadeIn(1000);
@@ -36,7 +36,7 @@ close1.click(() => {
     }, 1000);
 
     setTimeout(() => {
-        btn.fadeIn(1000);
+        btn.animate({opacity: 1}, 1000);
     }, 2000);
 
     setTimeout(() => {
