@@ -71,7 +71,7 @@ li {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     position: absolute;
-    top: 70vh;
+    top: 68vh;
     left: 50px;
     cursor: default;
 }
@@ -94,4 +94,10 @@ li {
     display: flex;
     font-weight: 900;
     font-size: 70px;
+}
+
+@media(max-width: 1210px) {
+    li {
+        margin: 30px;
+    }
 }
