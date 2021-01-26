@@ -14,3 +14,7 @@ home.click(() => {
         home.removeClass('animate__animated animate__headShake');
     }, 500);
 });
+
+$('.j').hover(function () {
+        this.hide();
+});

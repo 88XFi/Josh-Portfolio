@@ -10,7 +10,7 @@
     font-family: 'Product';
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
     background: #1b262c;
@@ -71,6 +71,27 @@ li {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     position: absolute;
-    top: 80vh;
+    top: 70vh;
+    left: 50px;
     cursor: default;
+}
+
+.name h2 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.about {
+    padding: 12px 40px;
+    font-size: 17px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.josh {
+    display: flex;
+    font-weight: 900;
+    font-size: 70px;
 }
