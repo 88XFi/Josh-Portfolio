@@ -122,20 +122,14 @@ ul .fas {
 }
 
 @media(max-width: 1210px) {
-    li, a {
-        margin: 0 20px;
-        display: inline;
-        font-size: 16px;
-    }
     .name {
         top: 63vh;
     }
     .tab {
-        height: 13vh;
-        width: 100%;
+        width: 200px;
     }
-    .menu {
-        top: 38px;
-        font-size: 20px;
+
+    li a {
+        font-size: 14px;
     }
 }
