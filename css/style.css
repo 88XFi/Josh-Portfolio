@@ -6,6 +6,11 @@
     list-style: none;
 }
 
+body, div, iframe {
+    padding: 0;
+    margin: 0;
+}
+
 @font-face {
     src: url(../sans.ttf);
     font-family: 'Product';
@@ -45,7 +50,7 @@ ul {
 
 .menu {
     font-size: 24px;
-    position: relative;
+    position: absolute;
     float: right;
     right: 20px;
     top: 20px;
@@ -130,19 +135,41 @@ ul .fas {
     color: #54e346;
 }
 
-.close {
+.close, .close1 {
     font-size: 22px;
     cursor: pointer;
     transition: .2s linear;
 }
 
-.close:hover {
+.close:hover, .close1:hover {
     color: #ec4646;
 }
 
-hr {
-    top: 280px;
+.close1 {
+    position: absolute;
+    top: 380px;
+}
+
+.about-me {
+    position: absolute;
+    text-align: justify;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    font-size: 22px;
+    top: 80px;
+}
+
+.about-text {
     position: relative;
+    top: 29vh;
+}
+
+.line {
+    top: 190px;
+    position: relative;
+    padding: 2px;
+    background: #54e346;
 }
 
 @media(max-width: 1210px) {
@@ -155,5 +182,11 @@ hr {
 
     li a {
         font-size: 16px;
+    }
+    .about-me {
+        width: 300px;
+    }
+    .close1 {
+        top: 480px;
     }
 }

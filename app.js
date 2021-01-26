@@ -7,19 +7,43 @@ $(window).on("load",function(){
 
 var title = $('.name');
 var btn = $('.about');
-var hr = $('hr').hide();
+var line = $('.line').hide();
+
+var close1 = $('.close1').hide();
+var about = $('.about-me').hide();
 
 btn.click(() => {
     title.animate({
         top: 50
     }, 1200);
 
-    btn.text('');
-    btn.addClass('fas fa-times close1');
+    btn.fadeOut(1000);
 
     setTimeout(() => {
-        hr.fadeIn(1000);
+        line.fadeIn(1000);
     }, 1200);
+
+    setTimeout(() => {
+        about.fadeIn(1000);
+        close1.fadeIn(1000);
+    }, 2200);
+});
+
+close1.click(() => {
+    about.fadeOut(1000);
+    setTimeout(() => {
+        line.fadeOut(1000);
+    }, 1000);
+
+    setTimeout(() => {
+        btn.fadeIn(1000);
+    }, 2000);
+
+    setTimeout(() => {
+        title.animate({
+            top: 467
+        }, 1200);
+    }, 3000);
 });
 
 var tab = $('.tab').hide();
@@ -39,13 +63,4 @@ close.click(() => {
     setTimeout(() => {
         menu.fadeIn(500);
     }, 1500);
-});
-
-
-$('.home').click(() => {
-    $('.home').addClass('animate__animated animate__headShake');
-
-    setTimeout(() => {
-        $('.home').removeClass('animate__animated animate__headShake');
-    }, 500);
 });
