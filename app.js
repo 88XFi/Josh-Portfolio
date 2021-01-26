@@ -66,5 +66,8 @@ close.click(() => {
 });
 
 $('.active').click(() => {
-    $('.active').addClass('animate__animated animate__wobble');
+    $('.active').addClass('animate__animated animate__headShake');
+    setTimeout(() => {
+        $('.active').removeClass('animate__animated animate__headShake');
+    }, 500);
 });
