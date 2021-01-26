@@ -121,6 +121,16 @@ ul .fas {
     color: #54e346;
 }
 
+.close {
+    font-size: 22px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.close:hover {
+    color: #ec4646;
+}
+
 @media(max-width: 1210px) {
     .name {
         top: 63vh;
