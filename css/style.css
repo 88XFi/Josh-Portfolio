@@ -135,17 +135,17 @@ ul .fas {
     color: #54e346;
 }
 
-.close, .close1 {
+.close, .close1, .close2 {
     font-size: 22px;
     cursor: pointer;
     transition: .2s linear;
 }
 
-.close:hover, .close1:hover {
+.close:hover, .close1:hover, .close2:hover {
     color: #ec4646;
 }
 
-.close1 {
+.close1, .close2 {
     position: absolute;
     top: 380px;
 }

@@ -64,3 +64,7 @@ close.click(() => {
         menu.fadeIn(500);
     }, 1500);
 });
+
+$('.active').click(() => {
+    $('.active').addClass('animate__animated animate__wobble');
+});

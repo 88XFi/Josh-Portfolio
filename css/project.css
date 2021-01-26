@@ -1,0 +1,45 @@
+.name1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: 5vh;
+    left: 50px;
+    cursor: default;
+}
+
+.name1 h2 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.line1 {
+    top: 190px;
+    position: relative;
+    padding: 2px;
+    background: #54e346;
+}
+
+.project-c {
+    position: absolute;
+    text-align: justify;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    font-size: 22px;
+    top: 80px;
+}
+
+.project-t {
+    position: relative;
+    top: 29vh;
+}
+
+@media(max-width: 1210px) {
+
+    .project-c {
+        width: 300px;
+    }
+    .close2 {
+        top: 500px;
+    }
+}
