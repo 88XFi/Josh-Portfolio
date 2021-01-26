@@ -15,6 +15,9 @@ home.click(() => {
     }, 500);
 });
 
-$('.j').hover(function () {
-        this.hide();
+var tab = $('.tab').hide();
+var menu = $('.menu');
+
+menu.click(() => {
+    tab.slideToggle(1500);
 });
