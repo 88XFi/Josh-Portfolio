@@ -147,7 +147,7 @@ ul .fas {
 
 .close1 {
     position: absolute;
-    top: 100vh;
+    margin-bottom: 80px;
 }
 
 .about-me {
@@ -191,14 +191,6 @@ ul .fas {
 
 .fa-js {
     color: yellow;
-}
-
-.fa-youtube {
-    color: #ec4646;
-}
-
-.fa-stack-overflow {
-    color: orange;
 }
 
 .sec1 {

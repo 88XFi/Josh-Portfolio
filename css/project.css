@@ -19,27 +19,62 @@
     background: #54e346;
 }
 
-.project-c {
-    position: absolute;
-    text-align: justify;
+.proj1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 280px;
+    padding: 10px;
+    width: 50%;
     left: 50%;
     transform: translateX(-50%);
-    width: 500px;
-    font-size: 22px;
-    top: 80px;
+    font-size: 23px;
+    background-color: #54e346;
+    color: #222832;
+    margin-bottom: 90px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: .2s linear;
 }
 
-.project-t {
-    position: relative;
-    top: 29vh;
+.proj1 a {
+    color: #222832;
+}
+
+.proj1:hover {
+    background: #79d70f;
+}
+
+.c {
+    display: inline-block;
+    transform: rotate(-25deg);
+}
+
+.contact-info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 50px;
+    top: 350px;
+}
+
+.contact-info a {
+    margin: 0 40px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.contact-info a:hover {
+    color: #79d70f;
 }
 
 @media(max-width: 1210px) {
-
-    .project-c {
-        width: 300px;
+    .contact-info a {
+        display: block;
+        margin: 50px 0;
     }
-    .close2 {
-        top: 500px;
+    .contact-info {
+    top: 270px;
     }
 }

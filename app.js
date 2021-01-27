@@ -52,7 +52,7 @@ var menu = $('.menu');
 menu.click(() => {
     menu.fadeOut(500);
     setTimeout(() => {
-        tab.slideDown(1500);
+        tab.slideDown(1000);
     }, 500);
 });
 
