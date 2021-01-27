@@ -219,6 +219,7 @@ hr {
     }
     .about-me {
         width: 300px;
+        font-size: 16px;
     }
     .close1 {
         top: 160vh;
