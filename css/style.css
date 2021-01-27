@@ -135,19 +135,19 @@ ul .fas {
     color: #54e346;
 }
 
-.close, .close1, .close2 {
+.close, .close1 {
     font-size: 22px;
     cursor: pointer;
     transition: .2s linear;
 }
 
-.close:hover, .close1:hover, .close2:hover {
+.close:hover, .close1:hover {
     color: #ec4646;
 }
 
-.close1, .close2 {
+.close1 {
     position: absolute;
-    top: 380px;
+    top: 100vh;
 }
 
 .about-me {
@@ -197,6 +197,23 @@ ul .fas {
     color: #ec4646;
 }
 
+.fa-stack-overflow {
+    color: orange;
+}
+
+.sec1 {
+    margin-bottom: 70px;
+}
+
+.sec2 {
+    margin-bottom: 100px;
+}
+
+hr {
+    position: relative;
+    bottom: 70px;
+}
+
 @media(max-width: 1210px) {
     .name {
         top: 63vh;
@@ -212,6 +229,6 @@ ul .fas {
         width: 300px;
     }
     .close1 {
-        top: 500px;
+        top: 160vh;
     }
 }
