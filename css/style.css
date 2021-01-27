@@ -160,6 +160,10 @@ ul .fas {
     top: 80px;
 }
 
+.about-me i {
+    color: #ec4646;
+}
+
 .about-text {
     position: relative;
     top: 29vh;
