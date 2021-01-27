@@ -155,13 +155,10 @@ ul .fas {
     text-align: justify;
     left: 50%;
     transform: translateX(-50%);
-    width: 500px;
+    width: 800px;
     font-size: 22px;
-    top: 80px;
-}
-
-.about-me i {
-    color: #ec4646;
+    top: 20px;
+    line-height: 2rem;
 }
 
 .about-text {
@@ -174,6 +171,30 @@ ul .fas {
     position: relative;
     padding: 2px;
     background: #54e346;
+}
+
+.fa-user {
+    font-size: 27px;
+}
+
+.fa-java {
+    color: coral;
+}
+
+.fa-html5 {
+    color: orange;
+}
+
+.fa-css3 {
+    color: steelblue;
+}
+
+.fa-js {
+    color: yellow;
+}
+
+.fa-youtube {
+    color: #ec4646;
 }
 
 @media(max-width: 1210px) {
