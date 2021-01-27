@@ -10,7 +10,7 @@ var btn = $('.about');
 var line = $('.line').hide();
 
 var close1 = $('.close1').hide();
-/* var about = $('.about-me').hide(); */
+var about = $('.about-me').hide();
 
 btn.click(() => {
     title.animate({
