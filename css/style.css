@@ -157,7 +157,7 @@ ul .fas {
     transform: translateX(-50%);
     width: 800px;
     font-size: 22px;
-    top: 20px;
+    top: 50px;
     line-height: 2rem;
 }
 
@@ -220,6 +220,7 @@ hr {
     .about-me {
         width: 300px;
         font-size: 16px;
+        top: 20px;
     }
     .close1 {
         top: 960px;
