@@ -64,19 +64,27 @@ ul {
     position: fixed;
     right: 0;
     top: 0;
-    height: 100vh;
-    width: 300px;
+    height: 70px;
+    width: 100%;
     background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     z-index: 10;
 }
 
+.tab ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .tab li {
-    margin: 70px 0;
+    margin: 0 30px;
+    display: inline;
 } 
 
 .tab li a {
@@ -102,6 +110,11 @@ section {
     position: relative;
     top: 15px;
     left: 33px;
+}
+
+.name h5 {
+    position: relative;
+    bottom: 10px;
 }
 
 .name p {
@@ -131,11 +144,6 @@ ul .fas {
     color: #ec4646;
 }
 
-.close1 {
-    position: absolute;
-    margin-bottom: 80px;
-}
-
 .fa-user {
     font-size: 27px;
 }
@@ -162,11 +170,13 @@ hr {
 }
 
 @media(max-width: 1210px) {
-    .tab {
-        width: 150px;
+    .tab li {
+        font-size: 13px;
     }
-
-    li a {
-        font-size: 16px;
+    .close {
+        position: relative;
+    }
+    .tab li {
+        margin: 20px;
     }
 }

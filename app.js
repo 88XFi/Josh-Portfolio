@@ -1,5 +1,6 @@
 $('.name h2').css({opacity: '0'});
 $('.name p').css({opacity: '0'});
+$('.name h5').css({opacity: '0'});
 
 $(window).on('load', function () {
     setTimeout(() => {
@@ -9,6 +10,11 @@ $(window).on('load', function () {
         setTimeout(() => {
             $('.name p').animate({
                 opacity: 1
+            }, 1000);
+            setTimeout(() => {
+                $('.name h5').animate({
+                    opacity: 1
+                }, 1000);
             }, 1000);
         }, 1000);
     }, 500)
@@ -34,7 +40,7 @@ menu.click(() => {
 var close = $('.close');
 
 close.click(() => {
-    tab.slideUp(1500);
+    tab.slideUp(1000);
     setTimeout(() => {
         menu.fadeIn(500);
     }, 1500);
