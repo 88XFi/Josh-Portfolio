@@ -73,6 +73,8 @@ ul {
     font-size: 16px;
     text-align: center;
     z-index: 10;
+    text-align: center;
+
 }
 
 .tab ul {
@@ -102,6 +104,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .name h2 {
@@ -109,12 +112,13 @@ section {
     font-weight: 300;
     position: relative;
     top: 15px;
-    left: 33px;
+    left: 35px;
 }
 
 .name h5 {
     position: relative;
     bottom: 10px;
+    left: 10px;
 }
 
 .name p {
@@ -144,29 +148,10 @@ ul .fas {
     color: #ec4646;
 }
 
-.fa-user {
-    font-size: 27px;
-}
-
-.fa-java {
-    color: coral;
-}
-
-.fa-html5 {
-    color: orange;
-}
-
-.fa-css3 {
-    color: steelblue;
-}
-
-.fa-js {
-    color: yellow;
-}
-
-hr {
-    position: relative;
-    bottom: 70px;
+.about-me {
+    max-width: 700px;
+    text-align: justify;
+    font-size: 24px;
 }
 
 @media(max-width: 1210px) {
@@ -178,5 +163,9 @@ hr {
     }
     .tab li {
         margin: 20px;
+    }
+    .about-me {
+        max-width: 300px;
+        font-size: 20px;
     }
 }

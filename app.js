@@ -1,6 +1,15 @@
 $('.name h2').css({opacity: '0'});
 $('.name p').css({opacity: '0'});
 $('.name h5').css({opacity: '0'});
+$('.menu').css({opacity: '0'});
+
+$('.content').hide();
+
+$(window).on("load",function(){
+   $(".center").fadeOut("slow");
+   $('.content').show();
+    });
+
 
 $(window).on('load', function () {
     setTimeout(() => {
@@ -15,18 +24,13 @@ $(window).on('load', function () {
                 $('.name h5').animate({
                     opacity: 1
                 }, 1000);
+                $('.menu').animate({
+                    opacity: 1
+                }, 1000);
             }, 1000);
         }, 1000);
     }, 500)
 });
-
-$('.content').hide();
-
-$(window).on("load",function(){
-   $(".center").fadeOut("slow");
-   $('.content').show();
-    });
-
 var tab = $('.tab').hide();
 var menu = $('.menu');
 
