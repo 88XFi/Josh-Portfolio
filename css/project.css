@@ -68,13 +68,3 @@
 .contact-info a:hover {
     color: #79d70f;
 }
-
-@media(max-width: 1210px) {
-    .contact-info a {
-        display: block;
-        margin: 50px 0;
-    }
-    .contact-info {
-    top: 270px;
-    }
-}

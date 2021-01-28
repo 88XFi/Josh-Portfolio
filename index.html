@@ -16,68 +16,59 @@
 <body>
     <div class="content">
 
-        <div class="name">
-            <h2>Hi, I'm</h2>
-            <div class="josh">
-                <p><span class="j">J</span>osh<span class="j">.</span></p>
-            </div>
-            <button class="about">About Me</button>
-        </div>
-        <div class="line"></div>
-
-        <div class="about-me">
-            <div class="about-text">
-                <section class="sec1">
-                    <h2>about me <span class="j">:</span></h2> <br>
-                    <p>Hello there! My name is Josh Daniel Bañares. I'm a self-taught web developer. I currently write
-                        code
-                        on 4 languages:
-                        <br><br>1. &nbsp;<i class="fab fa-java"></i> Java
-                        <br>2. &nbsp;<i class="fab fa-html5"></i> HTML5<br>
-                        3. &nbsp;<i class="fab fa-css3"></i> CSS3
-                        <br>4. &nbsp;<i class="fab fa-js"></i> JavaScript
-                        <br><br> My favorite language
-                        is Java. I learned how to code by watching free courses on YouTube, finding solutions on Stack
-                        Overflow, and &nbsp;w3schools.
-                    </p>
-                    <br>
-                    <br>
-                </section>
-                <hr>
-                <section class="sec2">
-                    <h2>my dream <span class="j">:</span></h2>
-                    <br>
-                    <p>My dream is to become a full-stack developer (basically front-end and back-end developer).
-                        Currently, I only work
-                        with the front-end of the website. I have little to no knowledge about back-end development. I
-                        am still planning about learning back-end development this year.</p>
-                </section>
-                <hr>
-
-                <i class="fas fa-times close1"></i>
-            </div>
-        </div>
-
         <i class="fas fa-bars menu"></i>
         <div class="tab">
             <ul>
-                <li class="home active"><a class="active" href="#"><i class="fas fa-home">&nbsp;</i> &nbsp;Home</a></li>
-                <li class="projects"><a href="projects.html"><i class="fas fa-code"></i>&nbsp;</i> &nbsp;Projects</a>
+                <li class="home"><a class="active" href="#home"><i class="fas fa-home">&nbsp;</i> &nbsp;Home</a></li>
+                <li class="about"><a href="#about"><i class="fas fa-pen">&nbsp;</i> &nbsp;About</a></li>
+                <li class="project"><a href="#project"><i class="fas fa-code"></i>&nbsp;</i> &nbsp;Projects</a>
                 </li>
-                <li class="contact"><a href="contact.html"><i class="fas fa-phone">&nbsp;</i> &nbsp;Contact</a></li>
-                <i class="fas fa-times close"></i>
+                <li class="contact"><a href="#contact"><i class="fas fa-phone">&nbsp;</i> &nbsp;Contacts</a></li>
+                <li><i class="fas fa-times close"></i></li>
             </ul>
         </div>
+        <section id="home">
+            <div class="name">
+                <h2>Hi, I'm</h2>
+                <p><span class="j">J</span>osh<span class="j">.</span></p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>about</h1>
+        </section>
+
+        <section id="project">
+            <h1>project</h1>
+        </section>
+
+        <section id="contact">
+            <h1>contact</h1>
+        </section>
     </div>
 
-    <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
+    <div class="center">
+        <div class="main">
+            <div class="balls balls-1">
+                <div class="ball ball--1"></div>
+                <div class="ball ball--2"></div>
+                <div class="ball ball--3"></div>
+                <div class="ball ball--4"></div>
+            </div>
+            <div class="balls balls-2">
+                <div class="ball ball--1"></div>
+                <div class="ball ball--2"></div>
+                <div class="ball ball--3"></div>
+                <div class="ball ball--4"></div>
+            </div>
+        </div>
     </div>
 
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://kit.fontawesome.com/3b12d9fb6d.js" s></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="app.js"></script>
 
 </html>

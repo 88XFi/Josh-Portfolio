@@ -1,50 +1,25 @@
+$('.name h2').css({opacity: '0'});
+$('.name p').css({opacity: '0'});
+
+$(window).on('load', function () {
+    setTimeout(() => {
+        $('.name h2').animate({
+            opacity: 1
+        }, 1000);
+        setTimeout(() => {
+            $('.name p').animate({
+                opacity: 1
+            }, 1000);
+        }, 1000);
+    }, 500)
+});
+
 $('.content').hide();
 
 $(window).on("load",function(){
-   $(".loader-wrapper").fadeOut("slow");
+   $(".center").fadeOut("slow");
    $('.content').show();
     });
-
-var title = $('.name');
-var btn = $('.about');
-var line = $('.line').hide();
-
-var close1 = $('.close1').hide();
-var about = $('.about-me').hide();
-
-btn.click(() => {
-    title.animate({
-        top: 50
-    }, 1200);
-
-    btn.animate({opacity: 0}, 1000);
-
-    setTimeout(() => {
-        line.fadeIn(1000);
-    }, 1200);
-
-    setTimeout(() => {
-        about.fadeIn(1000);
-        close1.fadeIn(1000);
-    }, 2200);
-});
-
-close1.click(() => {
-    about.fadeOut(1000);
-    setTimeout(() => {
-        line.fadeOut(1000);
-    }, 1000);
-
-    setTimeout(() => {
-        btn.animate({opacity: 1}, 1000);
-    }, 2000);
-
-    setTimeout(() => {
-        title.animate({
-            top: 467
-        }, 1200);
-    }, 3000);
-});
 
 var tab = $('.tab').hide();
 var menu = $('.menu');
@@ -70,4 +45,28 @@ $('.active').click(() => {
     setTimeout(() => {
         $('.active').removeClass('animate__animated animate__headShake');
     }, 500);
+});
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800
+});
+
+$('.home').click(function() {
+    $('.home a').addClass('active');
+    $('.about a, .project a, .contact a').removeClass('active');
+});
+
+$('.about').click(function() {
+    $('.about a').addClass('active');
+    $('.home a, .project a, .contact a').removeClass('active');
+});
+
+$('.project').click(function() {
+    $('.project a').addClass('active');
+    $('.about a, .home a, .contact a').removeClass('active');
+});
+
+$('.contact').click(function() {
+    $('.contact a').addClass('active');
+    $('.home a, .project a, .home a').removeClass('active');
 });
