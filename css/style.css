@@ -11,6 +11,10 @@
     font-family: 'Product';
 }
 
+input, textarea {
+    outline: none
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
@@ -47,6 +51,10 @@ a {
 
 ul {
     cursor: default;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 .menu {
@@ -100,11 +108,14 @@ ul {
 section {
     height: 100vh;
     width: 100%;
-    align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.name {
+    cursor: default;
 }
 
 .name h2 {
@@ -152,6 +163,126 @@ ul .fas {
     max-width: 700px;
     text-align: justify;
     font-size: 24px;
+    line-height: 2rem;
+}
+
+.project {
+    max-width: 700px;
+}
+
+.project p {
+    position: relative;
+    top: 10px;
+}
+
+#project h1 {
+    position: relative;
+    bottom: 30px;
+    text-align: justify;
+}
+
+#project img {
+    width: 500px;
+    border-radius: 6px;
+    display: block;
+    cursor: pointer;
+}
+
+.outline:hover {
+    transform: scale(1.05);
+}
+
+.outline {
+    padding: 4px;
+    background-color: #54e346;
+    border-radius: 6px;
+    display: inline-block;
+    overflow: hidden;
+    transition: .5s ease;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.overlay a {
+    font-size: 30px;
+}
+
+::placeholder {
+    font-family: inherit;
+}
+
+form input, textarea {
+    display: block;
+    border-radius: 6px;
+    width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #333;
+    font-family: inherit;
+
+}
+
+form {
+    color: #f9f9f9;
+}
+
+form .username {
+    height: 30px;
+}
+
+form textarea {
+    height: 80px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#contact {
+    text-align: left;
+}
+
+#contact h1 {
+    position: relative;
+    bottom: 30px;
+}
+
+#contact .submit {
+    display: block;
+    margin-top: 20px;
+    height: 30px;
+    background: #54e346;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact {
+    text-align: center;
+}
+
+.icons {
+    position: relative;
+    font-size: 22px;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 0 40px;
+    color: white;
+    transition: .5s ease;
+
+}
+
+.icons i:hover {
+    color: #54e346;
+    transform: translateY(-5px);
 }
 
 @media(max-width: 1210px) {
@@ -167,5 +298,18 @@ ul .fas {
     .about-me {
         max-width: 300px;
         font-size: 20px;
+    }
+    .project img {
+        max-width: 300px;
+    }
+    .project p {
+        font-size: 13px;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .icons i {
+        margin: 0;
     }
 }
