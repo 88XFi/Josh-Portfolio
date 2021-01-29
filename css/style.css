@@ -168,6 +168,7 @@ ul .fas {
 
 .project {
     max-width: 700px;
+    text-align: center;
 }
 
 .project p {
@@ -178,7 +179,6 @@ ul .fas {
 #project h1 {
     position: relative;
     bottom: 30px;
-    text-align: justify;
 }
 
 #project img {
@@ -298,6 +298,7 @@ form textarea {
     .about-me {
         max-width: 300px;
         font-size: 17px;
+        line-height: 1.7rem;
     }
     .project img {
         max-width: 300px;

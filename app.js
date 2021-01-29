@@ -50,13 +50,6 @@ close.click(() => {
     }, 1500);
 });
 
-$('.active').click(() => {
-    $('.active').addClass('animate__animated animate__headShake');
-    setTimeout(() => {
-        $('.active').removeClass('animate__animated animate__headShake');
-    }, 500);
-});
-
 var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 800
 });
@@ -80,10 +73,3 @@ $('.contact').click(function() {
     $('.contact a').addClass('active');
     $('.home a, .project a, .about a').removeClass('active');
 });
-
-/* $('.active').click(() => {
-    $('.active').addClass('animate__animated animate__headShake');
-    setTimeout(() => {
-        $('.active').removeClass('animate__animated animate__headShake');
-    }, 500);
-}); */
