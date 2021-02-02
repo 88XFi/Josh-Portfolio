@@ -1,0 +1,51 @@
+form {
+    color: #f9f9f9;
+
+    input, textarea {
+        display: block;
+        border-radius: 6px;
+        width: 250px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background: none;
+        color: white;
+        border: none;
+        border-bottom: 2px solid #333;
+        font-family: inherit;
+
+        .username {
+            height: 30px;
+        }      
+    }
+}
+
+#contact {
+    text-align: left;
+
+    h1 {
+        position: relative;
+        bottom: 30px;
+    }
+    
+    .submit {
+        display: block;
+        margin-top: 20px;
+        height: 30px;
+        background: #54e346;
+        color: #333;
+        font-weight: 500;
+        cursor: pointer;                                
+    }
+}
+
+.contact {
+    text-align: center;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: none;
+    top: 30px;
+    border-top: 2px solid #333;
+}

@@ -1,0 +1,163 @@
+@import 'loader';
+@import 'config';
+@import 'tab';
+@import 'form';
+
+body {
+    background: #111;
+    color: #fff;
+    font-family: 'Product';
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    font-size: 24px;
+    position: fixed;
+    float: right;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name {
+    cursor: default;
+
+    h2 {
+        font-size: 25px;
+        font-weight: 300;
+        position: relative;
+        top: 15px;
+        left: 35px;
+    }
+    
+    h5 {
+        position: relative;
+        bottom: 10px;
+        left: 10px;
+    }
+    
+    p {
+        font-weight: 900;
+        font-size: 100px;
+    }
+}
+
+.active {
+    color: #54e346;
+}
+
+.j {
+    color: #54e346;
+}
+
+ul .fas {
+    color: #54e346;
+}
+
+.close {
+    font-size: 22px;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover {
+        color: #ec4646;
+    }
+}
+
+.about-me {
+    max-width: 700px;
+    text-align: justify;
+    font-size: 24px;
+    line-height: 2rem;
+}
+
+.project {
+    max-width: 700px;
+    text-align: center;
+
+    p {
+        position: relative;
+        top: 10px;
+    }
+}
+
+#project {
+    h1 {
+        position: relative;
+        bottom: 30px;
+    }
+
+    img {
+        width: 500px;
+        border-radius: 6px;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.outline {
+    padding: 4px;
+    background-color: #54e346;
+    border-radius: 6px;
+    display: inline-block;
+    overflow: hidden;
+    transition: .5s ease;
+    box-shadow: 5px 5px 10px #000;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.overlay a {
+    font-size: 30px;
+}
+
+::placeholder {
+    font-family: inherit;
+}
+
+.icons {
+    position: relative;
+    font-size: 22px;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 0 40px;
+    color: white;
+    transition: .5s ease;
+
+}
+
+.icons i:hover {
+    color: #54e346;
+    transform: translateY(-5px);
+}
+
+.react {
+    color: #bbf1fa;
+}
+
+@import 'media';

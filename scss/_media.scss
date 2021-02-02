@@ -1,0 +1,29 @@
+@media(max-width: 1210px) {
+    .tab li {
+        font-size: 13px;
+    }
+    .close {
+        position: relative;
+    }
+    .tab li {
+        margin: 20px;
+    }
+    .about-me {
+        max-width: 300px;
+        font-size: 17px;
+        line-height: 1.7rem;
+    }
+    .project img {
+        max-width: 300px;
+    }
+    .project p {
+        font-size: 13px;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .icons i {
+        margin: 0;
+    }
+}
