@@ -6,31 +6,30 @@ $('.menu').css({opacity: '0'});
 $('.content').hide();
 
 $(window).on("load",function(){
-   $(".center").fadeOut("slow");
-   $('.content').show();
-    });
+   setTimeout(() => {
+        $(".center").fadeOut("slow");
+        $('.content').show();
+   }, 2000);
 
-
-$(window).on('load', function () {
+   setTimeout(() => {
+    $('.name h2').animate({
+        opacity: 1
+    }, 1000);
     setTimeout(() => {
-        $('.name h2').animate({
+        $('.name p').animate({
             opacity: 1
         }, 1000);
         setTimeout(() => {
-            $('.name p').animate({
+            $('.name h5').animate({
                 opacity: 1
             }, 1000);
-            setTimeout(() => {
-                $('.name h5').animate({
-                    opacity: 1
-                }, 1000);
-                $('.menu').animate({
-                    opacity: 1
-                }, 1000);
+            $('.menu').animate({
+                opacity: 1
             }, 1000);
         }, 1000);
-    }, 500)
-});
+    }, 1000);
+}, 2500)
+    });
 var tab = $('.tab').hide();
 var menu = $('.menu');
 
