@@ -6,10 +6,8 @@ $('.menu').css({opacity: '0'});
 $('.content').hide();
 
 $(window).on("load",function(){
-   setTimeout(() => {
-        $(".center").fadeOut("slow");
-        $('.content').show();
-   }, 2000);
+    $(".center").fadeOut("slow");
+    $('.content').show();
 
    setTimeout(() => {
     $('.name h2').animate({
